@@ -1,0 +1,21 @@
+{
+  "name": "hue-mqtt",
+  "version": "0.0.1",
+  "description": "Publish Philips Hue data to an MQTT broker",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "bridge",
+    "philips",
+    "hue",
+    "mqtt",
+    "broker",
+    "light",
+    "sensor",
+    "motion"
+  ],
+  "bin": {
+    "hue-mqtt": "./index.js"
+  },
+  "dependencies": {}
+}
