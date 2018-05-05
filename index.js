@@ -29,3 +29,7 @@ config.bridges.forEach((bridge) => {
 
   loop(bridge);
 });
+
+if (process.argv.indexOf('--send-ready') !== -1 && process.ppid) {
+  process.send('ready');
+}
