@@ -17,7 +17,9 @@ if (undefined === config.bridges || !config.bridges.length) {
   process.exit(1);
 }
 
-mqtt.connect(config.broker);
+if (!config.broker.connected) {
+  mqtt.connect(config.broker);
+}
 
 config.bridges.forEach((bridge) => {
   if (!bridge || typeof(bridge.host) === 'undefined' || !bridge.host) {
